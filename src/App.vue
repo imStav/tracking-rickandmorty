@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from "vue-router";
       <RouterLink to="/" class="font-semibold hover-link">Home</RouterLink>
       <RouterLink to="/" class="identity"
         >Rick & Morty <br /><span class="text-lg"
-          >status tracker</span
+          >tracking</span
         ></RouterLink
       >
       <RouterLink to="/about" class="font-semibold hover-link"
