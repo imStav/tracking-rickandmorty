@@ -7,9 +7,7 @@ import { RouterLink, RouterView } from "vue-router";
     <nav class="nav">
       <RouterLink to="/" class="font-semibold hover-link">Home</RouterLink>
       <RouterLink to="/" class="identity"
-        >Rick & Morty <br /><span class="text-lg"
-          >tracking</span
-        ></RouterLink
+        >Rick & Morty <br /><span class="text-lg">tracking</span></RouterLink
       >
       <RouterLink to="/about" class="font-semibold hover-link"
         >About</RouterLink
