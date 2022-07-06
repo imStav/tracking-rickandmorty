@@ -19,7 +19,7 @@ All the data are retrieved thanks to [rickandmortyapi.com](https://rickandmortya
 
 ### Visit tracking-rickandmorty
 
-The app is currently live at [tracking-rickandmorty.netlify.app](https://tracking-rick.netlify.app/)
+The app is currently live at [tracking-rickandmorty.netlify.app](https://tracking-rickandmorty.netlify.app/)
 
 ### Thoughts
 
