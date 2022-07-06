@@ -41,3 +41,7 @@
         @apply flex flex-col justify-center xl:w-1/3 md:w-3/4 w-10/12 my-24 mx-auto;
     }
 }
+
+.main-grid::-webkit-scrollbar {
+    display: none;
+}
