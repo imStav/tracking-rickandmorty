@@ -16,6 +16,7 @@
         scrollbar-color: transparent transparent;
     }
 
+    /***App logo***/
     .identity {
         @apply text-2xl font-bold font-display leading-none mx-8 self-start text-center bg-clip-text text-transparent bg-gradient-to-t from-green-400 to-cyan-400 hover:opacity-90 duration-150;
         filter: saturate(2);
@@ -42,6 +43,7 @@
     }
 }
 
+/*Disable the grid's scrollbar on Chromium based browsers*/
 .main-grid::-webkit-scrollbar {
     display: none;
 }

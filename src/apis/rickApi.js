@@ -1,7 +1,5 @@
 let allCharacters = Array.from(Array(51).keys());
-// console.log(allCharacters);
 allCharacters.shift();
-// console.log(allCharacters);
 
 // Retrieves data from RESTapi at rickandmortyapi.com
 export async function getAllCharacters() {
@@ -11,7 +9,6 @@ export async function getAllCharacters() {
     );
 
     const res = await all.json();
-    //console.log(res);
 
     return res;
   } catch (e) {

@@ -7,7 +7,6 @@ const characters = ref("");
 onMounted(async () => {
   const getCharacters = await getAllCharacters();
   characters.value = getCharacters;
-  //console.log(getCharacters);
 });
 </script>
 
