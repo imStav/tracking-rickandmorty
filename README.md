@@ -15,7 +15,7 @@ All the data are retrieved thanks to [rickandmortyapi.com](https://rickandmortya
 
 *Find more information in the `package.json` file*
 
-![tracking-rickandmorty preview](/src/assets/screenshots/rickApi_preview.JPG "tracking-rickandmorty preview")
+![tracking-rickandmorty preview](/src/assets/screenshots/tracking-rickandmorty_preview.png "tracking-rickandmorty preview")
 
 ### Visit tracking-rickandmorty
 
