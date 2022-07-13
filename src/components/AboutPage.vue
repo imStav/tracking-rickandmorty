@@ -5,7 +5,6 @@ const title = ref("About");
 </script>
 
 <template>
-  <section class="about about-page">
     <h2 class="text-2xl font-bold mb-4">{{ title }}</h2>
     <p>
       <i>Rick & Morty Status Tracker</i> is a simple tracking tool to let you
@@ -28,5 +27,4 @@ const title = ref("About");
       This project is subject to changes / evolutions in the future. I'm working
       on new features, such as an integrated search engine, filters, etc.
     </p>
-  </section>
 </template>

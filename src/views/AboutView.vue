@@ -3,5 +3,7 @@ import AboutPage from "../components/AboutPage.vue";
 </script>
 
 <template>
-  <AboutPage />
+  <section class="about about-page">
+    <AboutPage />
+  </section>
 </template>
