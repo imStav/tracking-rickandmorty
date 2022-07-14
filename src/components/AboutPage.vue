@@ -7,13 +7,13 @@ const title = ref("About");
 <template>
     <h2 class="text-2xl font-bold mb-4">{{ title }}</h2>
     <p>
-      <i>Rick & Morty Status Tracker</i> is a simple tracking tool to let you
+      <i>Tracking Rick & Morty</i> is a simple tracking tool to let you
       know if your favourite character from <strong>Rick & Morty</strong> is
       still alive in the current TV show's timeline.
     </p>
 
     <p class="my-8">
-      All the data are retrieved thanks to the Rick & Morty api at
+      All the data are retrieved thanks to the Rick & Morty API at
       <a
         href="https://rickandmortyapi.com/"
         class="underline hover-link"
