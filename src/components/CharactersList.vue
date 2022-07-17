@@ -12,6 +12,8 @@ onMounted(async () => {
   characters.value = getCharacters;
 });
 
+//Initializing a reactive (but void at start) object that takes the
+//PopupCharacterInfos props schema defined in its own component template
 const currentElement = ref({
   id: 0,
   image: "",
@@ -22,8 +24,16 @@ const currentElement = ref({
   location: { name: "" },
 });
 
+//Setting currentElement values to limit the injected values 
+//into the model
 function getCharacterInfos(character) {
-  currentElement.value = character;
+  currentElement.value.id = character.id;
+  currentElement.value.image = character.image;
+  currentElement.value.name = character.name;
+  currentElement.value.status = character.status;
+  currentElement.value.species = character.species;
+  currentElement.value.origin.name = character.origin.name;
+  currentElement.value.location.name = character.location.name;
   let modal = document.querySelector("dialog");
   modal.showModal();
 }
@@ -60,6 +70,8 @@ function getCharacterInfos(character) {
       />
     </div>
 
+    <!-- Passing back the reactive currentElement props 
+    originally retrieved from PopupCharacterInfos component -->
     <PopupCharacterInfos
       :id="currentElement.id"
       :image="currentElement.image"

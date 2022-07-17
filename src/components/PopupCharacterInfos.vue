@@ -58,25 +58,3 @@ function closeInfos() {
     </div>
   </dialog>
 </template>
-
-
-      <!-- <dialog class="dialog-ui" :id="c.id">
-        <div class="flex flex-col items-center font-sans mb-4">
-          <img 
-          :src="c.image" 
-          class="w-36 rounded-full my-4" 
-          :alt="`picture of ${c.name}`" 
-          />
-
-          <h2>{{ c.name }}</h2>
-
-          <p>{{ c.status }}</p>
-          <p>{{ c.species }}</p>
-          <p>{{ c.origin.name }}</p>
-          <p>{{ c.location.name }}</p>
-        </div>
-
-        <div class="flex justify-center">
-          <button @click="closeInfos" class="close-infos-btn">X</button>
-        </div>
-      </dialog> -->

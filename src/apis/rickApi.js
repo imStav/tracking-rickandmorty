@@ -1,4 +1,4 @@
-let allCharacters = Array.from(Array(4).keys());
+let allCharacters = Array.from(Array(51).keys());
 allCharacters.shift();
 
 // Retrieves data from RESTapi at rickandmortyapi.com
