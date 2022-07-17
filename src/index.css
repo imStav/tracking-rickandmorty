@@ -12,7 +12,7 @@
     }
 
     .main-grid {
-        @apply grid xl:grid-cols-3 md:grid-cols-3 grid-cols-2 place-items-center gap-4 p-4 overflow-y-scroll;
+        @apply grid xl:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-4 p-4 overflow-y-scroll;
         scrollbar-color: transparent transparent;
     }
 
@@ -35,7 +35,15 @@
     }
 
     .character-img {
-        @apply w-48 rounded-full;
+        @apply w-48 rounded-full md:border-4 border-transparent hover:border-current hover:cursor-pointer duration-150 ease-in-out;
+    }
+
+    .dialog-ui {
+        @apply max-w-[30vw] px-12 bg-black text-current text-center backdrop:backdrop-blur-sm border-2 border-slate-200/40 rounded-xl;
+    }
+
+    .close-infos-btn {
+        @apply font-glitch bg-red-400 text-slate-900 hover:bg-red-500 duration-150 ease-in-out px-4 py-2 rounded-full;
     }
 
     .about-page {
