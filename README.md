@@ -1,4 +1,4 @@
-# Tracking Rick & Morty
+# Tracking Rick & Morty [![Netlify Status](https://api.netlify.com/api/v1/badges/dda1fadf-ba09-4d87-ab27-1935b5143cc9/deploy-status)](https://app.netlify.com/sites/tracking-rickandmorty/deploys)
 
 ## The project
 
