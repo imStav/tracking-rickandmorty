@@ -8,10 +8,11 @@ All the data are retrieved thanks to [rickandmortyapi.com](https://rickandmortya
 
 ### Technologies
 
-* 🔭 Vue.js (v3.2.37)
-* ⚡ Vite (v2.9.12)
-* 🌈 Tailwind CSS (v3.1.4)
-* ✨ ESLint (v8.5.0) & Prettier (v2.5.1)
+* 🔭 Vue.js (3.2.37)
+* ⚡ Vite (2.9.12)
+* 🌈 Tailwind CSS (3.1.4)
+* ✨ ESLint & Prettier
+* 🛰️ Netlify
 
 *Find more information in the `package.json` file*
 
