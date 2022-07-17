@@ -13,26 +13,27 @@ onMounted(async () => {
 });
 
 const currentElement = ref({
-  PopupCharacterInfos
+  id: 0,
+  image: "",
+  name: "",
+  status: "",
+  species: "",
+  origin: { name: "" },
+  location: { name: "" },
 });
 
-const Toggle = (trigger) => {
-  currentElement.value[trigger] = !currentElement.value[trigger]
-};
-
-function getCharacterInfos() {
-  dynamicId = parseInt(document.querySelector("dialog").id);
+function getCharacterInfos(character) {
+  currentElement.value = character;
   let modal = document.querySelector("dialog");
   modal.showModal();
-};
+}
 </script>
 
 <template>
   <div class="main-grid">
     <!-- This block of code generates all the characters trough a loop
     on the data retrieved from RESTapi at rickandmortyapi.com -->
-    <div v-for="c in characters" class="font-glitch p-4">
-      
+    <div v-for="c in characters" :key="c.id" class="font-glitch p-4">
       <!-- Renders the flag-like label that highlights the character's
       name and its status -->
       <div class="character-label">
@@ -41,7 +42,9 @@ function getCharacterInfos() {
         <!-- This displays the character's status in a given color 
         (green: Alive / red: Dead / slate: unknown) -->
         <p v-if="c.status === 'Alive'" class="text-green-400">{{ c.status }}</p>
-        <p v-else-if="c.status === 'Dead'" class="text-red-400">{{ c.status }}</p>
+        <p v-else-if="c.status === 'Dead'" class="text-red-400">
+          {{ c.status }}
+        </p>
         <p v-else class="text-slate-600">{{ c.status }}</p>
       </div>
 
@@ -53,28 +56,18 @@ function getCharacterInfos() {
         :title="c.name"
         :alt="`picture of ${c.name}`"
         loading="lazy"
-        @click="() => Toggle('PopupCharacterInfos')"
+        @click="() => getCharacterInfos(c)"
       />
     </div>
 
-    <PopupCharacterInfos v-for="c in characters" 
-      v-if="currentElement.PopupCharacterInfos"
-      :id="c.id"
-      :image="c.image"
-      :name="c.name"
-      :status="c.status"
-      :species="c.species"
-      :origin="c.origin.name"
-      :location="c.location.name"
+    <PopupCharacterInfos
+      :id="currentElement.id"
+      :image="currentElement.image"
+      :name="currentElement.name"
+      :status="currentElement.status"
+      :species="currentElement.species"
+      :origin="currentElement.origin.name"
+      :location="currentElement.location.name"
     />
   </div>
 </template>
-
-
-        <!-- :image="c.image" 
-        :name="c.name" 
-        :id="c.id"
-        :status="c.status" 
-        :species="c.species" 
-        :origin="c.origin.name" 
-        :location="c.location.name" -->
