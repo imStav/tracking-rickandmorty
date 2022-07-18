@@ -39,7 +39,7 @@
     }
 
     .dialog-ui {
-        @apply max-w-[30vw] px-12 bg-black text-current text-center backdrop:backdrop-blur-sm border-2 border-slate-200/40 rounded-xl;
+        @apply max-w-[70vw] sm:max-w-[30vw] px-12 bg-black text-current text-center backdrop:backdrop-blur-sm border-2 border-slate-200/40 rounded-xl;
     }
 
     .close-infos-btn {
