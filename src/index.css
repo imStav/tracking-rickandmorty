@@ -7,21 +7,24 @@
         @apply flex fixed top-0 w-full bg-gradient-to-t from-transparent to-fuchsia-900 backdrop-blur-xl justify-center items-center py-4;
     }
 
+    /** HomeView layout **/
     .main {
         @apply xl:w-1/2 md:w-3/4 flex flex-col justify-center items-center my-24 mx-auto;
     }
 
+    /** Grid system to display all the characters **/
     .main-grid {
         @apply grid xl:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-4 p-4 overflow-y-scroll;
         scrollbar-color: transparent transparent;
     }
 
-    /***App logo***/
+    /*** App logo ***/
     .identity {
         @apply text-2xl font-bold font-display leading-none mx-8 self-start text-center bg-clip-text text-transparent bg-gradient-to-t from-green-400 to-cyan-400 hover:opacity-90 duration-150;
         filter: saturate(2);
     }
 
+    /** Global hover effects for links **/
     .hover-link {
         @apply hover:text-white duration-150;
     }
@@ -38,20 +41,23 @@
         @apply w-48 rounded-full md:border-4 border-transparent hover:border-current hover:cursor-pointer duration-150 ease-in-out;
     }
 
+    /** Popup **/
     .dialog-ui {
         @apply max-w-[70vw] sm:max-w-[30vw] px-12 bg-black text-current text-center backdrop:backdrop-blur-sm border-2 border-slate-200/40 rounded-xl;
     }
 
+    /* Pupup close button */
     .close-infos-btn {
         @apply font-glitch bg-red-400 text-slate-900 hover:bg-red-500 duration-150 ease-in-out px-4 py-2 rounded-full;
     }
 
+    /** AboutView layout **/
     .about-page {
         @apply flex flex-col justify-center xl:w-1/3 md:w-3/4 w-10/12 my-24 mx-auto;
     }
 }
 
-/*Disable the grid's scrollbar on Chromium based browsers*/
+/* Disable the grid's scrollbar on Chromium based browsers */
 .main-grid::-webkit-scrollbar {
     display: none;
 }
