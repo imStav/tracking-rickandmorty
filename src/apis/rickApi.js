@@ -1,3 +1,4 @@
+// Setting a range of characters to retrieve and shifting the first index (0)
 let allCharacters = Array.from(Array(51).keys());
 allCharacters.shift();
 

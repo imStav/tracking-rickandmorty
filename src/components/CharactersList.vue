@@ -3,8 +3,8 @@ import { onMounted, ref } from "vue";
 import { getAllCharacters } from "../apis/rickApi";
 import PopupCharacterInfos from "./PopupCharacterInfos.vue";
 
-//Reactive variable to pass and access dynamically the data retrieved
-//From RESTapi call at rickandmortyapi.com
+/* Reactive variable to pass and access dynamically the data retrieved 
+from RESTapi at rickandmortyapi.com */
 const characters = ref("");
 
 onMounted(async () => {
@@ -12,8 +12,9 @@ onMounted(async () => {
   characters.value = getCharacters;
 });
 
-//Initializing a reactive (but void at start) object that takes the
-//PopupCharacterInfos props schema defined in its own component template
+/* Initializing a reactive (but void at start) object that takes the
+PopupCharacterInfos props schema defined in its own component template
+Coded by Usponso, July 17th 2022 */
 const currentElement = ref({
   id: 0,
   image: "",
@@ -24,8 +25,7 @@ const currentElement = ref({
   location: { name: "" },
 });
 
-//Setting currentElement values to limit the injected values 
-//into the model
+// Setting currentElement values to limit the injected values into the model
 function getCharacterInfos(character) {
   currentElement.value.id = character.id;
   currentElement.value.image = character.image;
@@ -41,25 +41,17 @@ function getCharacterInfos(character) {
 
 <template>
   <div class="main-grid">
-    <!-- This block of code generates all the characters trough a loop
+    <!-- This block of code generates all the characters via a loop
     on the data retrieved from RESTapi at rickandmortyapi.com -->
     <div v-for="c in characters" :key="c.id" class="font-glitch p-4">
-      <!-- Renders the flag-like label that highlights the character's
-      name and its status -->
       <div class="character-label">
         <h2 class="character-name">{{ c.name }}</h2>
 
-        <!-- This displays the character's status in a given color 
-        (green: Alive / red: Dead / slate: unknown) -->
         <p v-if="c.status === 'Alive'" class="text-green-400">{{ c.status }}</p>
-        <p v-else-if="c.status === 'Dead'" class="text-red-400">
-          {{ c.status }}
-        </p>
+        <p v-else-if="c.status === 'Dead'" class="text-red-400">{{ c.status }}</p>
         <p v-else class="text-slate-600">{{ c.status }}</p>
       </div>
 
-      <!-- Characters's avatars are dynamically generated too 
-      and lazy-loaded -->
       <img
         :src="c.image"
         class="character-img"
@@ -68,6 +60,7 @@ function getCharacterInfos(character) {
         loading="lazy"
         @click="() => getCharacterInfos(c)"
       />
+      <!-- Calling the dynamic popup when an image is clicked -->
     </div>
 
     <!-- Passing back the reactive currentElement props 
