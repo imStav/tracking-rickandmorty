@@ -25,7 +25,8 @@ const currentElement = ref({
   location: { name: "" },
 });
 
-// Setting currentElement values to limit the injected values into the model
+/* Setting currentElement values to limit the injected values into the model
+Coded with Usponso, July 17th 2022 */
 function getCharacterInfos(character) {
   currentElement.value.id = character.id;
   currentElement.value.image = character.image;
@@ -64,7 +65,8 @@ function getCharacterInfos(character) {
     </div>
 
     <!-- Passing back the reactive currentElement props 
-    originally retrieved from PopupCharacterInfos component -->
+    originally retrieved from PopupCharacterInfos component 
+    Coded with Usponso, July 17th 2022 -->
     <PopupCharacterInfos
       :id="currentElement.id"
       :image="currentElement.image"
