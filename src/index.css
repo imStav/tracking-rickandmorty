@@ -4,7 +4,7 @@
 
 @layer components {
     .nav {
-        @apply flex fixed top-0 w-full bg-gradient-to-t from-transparent to-fuchsia-900 backdrop-blur-xl justify-center items-center py-4;
+        @apply flex fixed top-0 w-full z-10 bg-gradient-to-t from-transparent to-fuchsia-900 backdrop-blur-xl justify-center items-center py-4;
     }
 
     /** HomeView layout **/
