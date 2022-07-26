@@ -37,7 +37,7 @@ function closeInfos() {
 </script>
 
 <template>
-  <dialog class="dialog-ui" :id="id">
+  <dialog class="dialog-ui" :id="id" v-motion-slide-visible-bottom>
     <div class="flex flex-col items-center font-sans mb-4">
       <img 
       :src="image" 
