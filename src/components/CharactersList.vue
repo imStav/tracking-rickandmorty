@@ -44,7 +44,7 @@ function getCharacterInfos(character) {
   <div class="main-grid">
     <!-- This block of code generates all the characters via a loop
     on the data retrieved from RESTapi at rickandmortyapi.com -->
-    <div v-for="c in characters" :key="c.id" class="font-glitch p-4" v-motion-pop-visible>
+    <div v-for="c in characters" :key="c.id" class="font-glitch p-4" v-motion-pop>
       <div class="character-label">
         <h2 class="character-name">{{ c.name }}</h2>
 
