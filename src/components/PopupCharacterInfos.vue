@@ -45,12 +45,12 @@ function closeInfos() {
       :alt="`picture of ${name}`" 
       />
 
-      <h2>{{ name }}</h2>
+      <h2 class="px-2">{{ name }}</h2>
 
-      <p>{{ status }}</p>
-      <p>{{ species }}</p>
-      <p>{{ origin }}</p>
-      <p>{{ location }}</p>
+      <p class="px-2">{{ status }}</p>
+      <p class="hover-details" :title="`Species: ${species}`">{{ species }}</p>
+      <p class="hover-details" :title="`From: ${origin}`">{{ origin }}</p>
+      <p class="hover-details" :title="`Current location: ${location}`">{{ location }}</p>
     </div>
 
     <div class="flex justify-center">

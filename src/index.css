@@ -43,7 +43,11 @@
 
     /** Popup **/
     .dialog-ui {
-        @apply max-w-[70vw] sm:max-w-[30vw] px-12 bg-black text-current text-center backdrop:backdrop-blur-sm border-2 border-slate-200/40 rounded-xl;
+        @apply max-w-[70vw] sm:max-w-[30vw] px-12 bg-black text-current text-center backdrop:backdrop-blur-sm border-2 border-white/20 rounded-xl;
+    }
+
+    .hover-details {
+        @apply hover:bg-white/20 hover:cursor-pointer px-2 rounded-full duration-300;
     }
 
     /* Pupup close button */
