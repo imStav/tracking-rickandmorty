@@ -66,8 +66,12 @@
     display: none;
 }
 
-@supports not (backdrop-filter: blur();) {
+@supports not (backdrop-filter: blur()) {
     .nav {
-        background-image: linear-gradient(to top, #00000098, #701a75);
+        background-image: linear-gradient(to top, #000000e0, #701a75);
+    }
+
+    .dialog-ui::backdrop {
+        background-color: #000000e0;
     }
 }
