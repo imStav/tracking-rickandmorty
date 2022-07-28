@@ -65,3 +65,9 @@
 .main-grid::-webkit-scrollbar {
     display: none;
 }
+
+@supports not (backdrop-filter: blur();) {
+    .nav {
+        background-image: linear-gradient(to top, #00000098, #701a75);
+    }
+}
