@@ -14,7 +14,7 @@
 
     /** Grid system to display all the characters **/
     .main-grid {
-        @apply grid xl:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-4 p-4 overflow-y-scroll;
+        @apply grid xl:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-4 p-4;
         scrollbar-color: transparent transparent;
     }
 
