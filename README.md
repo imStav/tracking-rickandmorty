@@ -4,7 +4,6 @@
 
 **Tracking Rick & Morty** is a minimalistic app 
 that aims to track the characters statuses of the TV show *Rick & Morty*.
-All the data are retrieved thanks to [rickandmortyapi.com](https://rickandmortyapi.com/)
 
 ### Technologies
 
