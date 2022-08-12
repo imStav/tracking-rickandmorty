@@ -10,6 +10,7 @@ that aims to track the characters statuses of the TV show *Rick & Morty*.
 * 🔭 Vue.js (3.2.37)
 * ⚡ Vite (2.9.12)
 * 🌈 Tailwind CSS (3.1.4)
+* 💫 Vue Motion (@vueuse/motion)
 * ✨ ESLint & Prettier
 * 🛰️ Netlify
 
