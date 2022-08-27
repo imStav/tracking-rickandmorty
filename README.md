@@ -16,7 +16,7 @@ that aims to track the characters statuses of the TV show *Rick & Morty*.
 
 *Find more information in the `package.json` file*
 
-![tracking-rickandmorty preview](/src/assets/screenshots/tracking-rickandmorty_preview.png "tracking-rickandmorty preview")
+![tracking-rickandmorty preview](/src/assets/screenshots/tracking-rickandmorty_new-preview.png "tracking-rickandmorty preview")
 
 ### Visit tracking-rickandmorty
 
