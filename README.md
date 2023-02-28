@@ -1,4 +1,4 @@
-![tracking-rickandmorty preview](/src/assets/mockups/mockup-homepage.png.png "tracking-rickandmorty preview")
+![tracking-rickandmorty preview](/src/assets/mockups/mockup-homepage.png "tracking-rickandmorty preview")
 
 # Tracking Rick & Morty
 
