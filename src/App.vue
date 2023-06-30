@@ -5,7 +5,6 @@ import { RouterLink, RouterView } from "vue-router";
 <template>
   <header>
     <nav class="nav">
-      <RouterLink to="/" class="font-semibold hover-link">Home</RouterLink>
       <RouterLink to="/" class="identity"
         >Rick & Morty <br /><span class="text-lg">tracking</span></RouterLink
       >
