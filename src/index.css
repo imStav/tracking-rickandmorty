@@ -49,9 +49,8 @@
         @apply mb-2 overflow-hidden max-w-[180px] self-start font-sans;
     }
 
-    .character-name,
-    .character-origin {
-        @apply whitespace-nowrap;
+    .character-name {
+        @apply font-semibold;
     }
 
     .character-img {

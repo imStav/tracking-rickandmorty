@@ -67,7 +67,7 @@ function getCharacterInfos(character) {
       />
       <!-- Calling the dynamic popup when an image is clicked -->
 
-      <div class="flex self-start mt-2 rounded-full px-4 text-sm">
+      <div class="flex self-start mt-2 text-sm">
         <p v-if="c.status === 'Alive'" class="text-green-400">{{ c.status }}</p>
         <p v-else-if="c.status === 'Dead'" class="text-red-400">{{ c.status }}</p>
         <p v-else class="text-slate-600">{{ c.status }}</p>
