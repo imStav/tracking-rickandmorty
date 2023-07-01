@@ -44,24 +44,34 @@ function getCharacterInfos(character) {
   <div class="main-grid">
     <!-- This block of code generates all the characters via a loop
     on the data retrieved from RESTapi at rickandmortyapi.com -->
-    <div v-for="c in characters" :key="c.id" class="font-glitch p-4" v-motion-pop>
+    <div v-for="c in characters" :key="c.id" class="character-card rounded-2xl font-glitch p-4" 
+    :class="c.status === 'Alive' 
+    ? 'character-card-alive' 
+    : c.status === 'Dead' 
+    ? 'character-card-dead' 
+    : 'character-card-unknown'" 
+    @click="() => getCharacterInfos(c)" 
+    v-motion-pop
+    >
       <div class="character-label">
         <h2 class="character-name">{{ c.name }}</h2>
-
-        <p v-if="c.status === 'Alive'" class="text-green-400">{{ c.status }}</p>
-        <p v-else-if="c.status === 'Dead'" class="text-red-400">{{ c.status }}</p>
-        <p v-else class="text-slate-600">{{ c.status }}</p>
+        <p class="font-light">{{ c.origin.name }}</p>
       </div>
 
-      <img
+        <img
         :src="c.image"
         class="character-img"
         :title="c.name"
         :alt="`picture of ${c.name}`"
         loading="lazy"
-        @click="() => getCharacterInfos(c)"
       />
       <!-- Calling the dynamic popup when an image is clicked -->
+
+      <div class="flex self-start mt-2 rounded-full px-4 text-sm">
+        <p v-if="c.status === 'Alive'" class="text-green-400">{{ c.status }}</p>
+        <p v-else-if="c.status === 'Dead'" class="text-red-400">{{ c.status }}</p>
+        <p v-else class="text-slate-600">{{ c.status }}</p>
+      </div>
     </div>
 
     <!-- Passing back the reactive currentElement props 

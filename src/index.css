@@ -29,16 +29,33 @@
         @apply hover:text-white duration-150;
     }
 
-    .character-label {
-        @apply mb-2 border-l border-slate-500 px-2 overflow-hidden xl:max-w-fit max-w-[130px] bg-gradient-to-r from-slate-500/40 to-transparent;
+    .character-card {
+        @apply max-w-[220px] flex flex-col whitespace-nowrap hover:cursor-pointer;
     }
 
-    .character-name {
-        @apply font-semibold font-sans whitespace-nowrap text-ellipsis;
+    .character-card-alive {
+        @apply bg-emerald-700/30 border border-transparent hover:border-emerald-600 duration-200;
+    }
+
+    .character-card-dead {
+        @apply bg-red-700/30 border border-transparent hover:border-red-600 duration-200;
+    }
+
+    .character-card-unknown {
+        @apply bg-gray-700/40 border border-transparent hover:border-gray-500 duration-200;
+    }
+
+    .character-label {
+        @apply mb-2 overflow-hidden max-w-[180px] self-start font-sans;
+    }
+
+    .character-name,
+    .character-origin {
+        @apply whitespace-nowrap;
     }
 
     .character-img {
-        @apply w-48 rounded-full md:border-4 border-transparent hover:border-current hover:cursor-pointer duration-150 ease-in-out;
+        @apply max-w-[192px] rounded-full;
     }
 
     /** Popup **/
