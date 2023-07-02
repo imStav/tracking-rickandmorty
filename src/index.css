@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 @layer components {
+    footer {
+        @apply w-full py-4;
+    }
+
+    .footer-section {
+        @apply flex flex-col justify-center items-center;
+    }
+
+    .footer-section a {
+        @apply my-4;
+    }
+
     .nav {
         @apply flex fixed top-0 w-full z-10 bg-gradient-to-t from-transparent to-gray-900 backdrop-blur-xl justify-center items-center py-4;
     }
