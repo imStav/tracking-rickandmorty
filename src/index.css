@@ -30,7 +30,7 @@
     }
 
     .character-card {
-        @apply max-w-[220px] flex flex-col whitespace-nowrap hover:cursor-pointer;
+        @apply max-w-[220px] flex flex-col hover:cursor-pointer;
     }
 
     .character-card-alive {
@@ -46,11 +46,15 @@
     }
 
     .character-label {
-        @apply mb-2 overflow-hidden max-w-[180px] self-start font-sans;
+        @apply mb-3 max-w-[100%] self-start font-sans;
     }
 
     .character-name {
-        @apply font-semibold;
+        @apply font-semibold whitespace-nowrap overflow-hidden text-ellipsis;
+    }
+
+    .character-origin {
+        @apply text-sm font-light whitespace-nowrap overflow-hidden text-ellipsis;
     }
 
     .character-img {
