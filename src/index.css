@@ -3,8 +3,20 @@
 @tailwind utilities;
 
 @layer components {
+    footer {
+        @apply w-full py-4;
+    }
+
+    .footer-section {
+        @apply flex flex-col justify-center items-center;
+    }
+
+    .footer-section a {
+        @apply my-4;
+    }
+
     .nav {
-        @apply flex fixed top-0 w-full z-10 bg-gradient-to-t from-transparent to-fuchsia-900 backdrop-blur-xl justify-center items-center py-4;
+        @apply flex fixed top-0 w-full z-10 bg-gradient-to-t from-transparent to-gray-900 backdrop-blur-xl justify-center items-center py-4;
     }
 
     /** HomeView layout **/
@@ -29,16 +41,36 @@
         @apply hover:text-white duration-150;
     }
 
+    .character-card {
+        @apply max-w-[220px] flex flex-col hover:cursor-pointer;
+    }
+
+    .character-card-alive {
+        @apply bg-emerald-700/30 border border-transparent hover:border-emerald-600 duration-200;
+    }
+
+    .character-card-dead {
+        @apply bg-red-700/30 border border-transparent hover:border-red-600 duration-200;
+    }
+
+    .character-card-unknown {
+        @apply bg-gray-700/40 border border-transparent hover:border-gray-500 duration-200;
+    }
+
     .character-label {
-        @apply mb-2 border-l border-slate-500 px-2 overflow-hidden xl:max-w-fit max-w-[130px] bg-gradient-to-r from-slate-500/40 to-transparent;
+        @apply mb-3 max-w-[100%] self-start font-sans;
     }
 
     .character-name {
-        @apply font-semibold font-sans whitespace-nowrap text-ellipsis;
+        @apply font-semibold whitespace-nowrap overflow-hidden text-ellipsis;
+    }
+
+    .character-origin {
+        @apply text-sm font-light whitespace-nowrap overflow-hidden text-ellipsis;
     }
 
     .character-img {
-        @apply w-48 rounded-full md:border-4 border-transparent hover:border-current hover:cursor-pointer duration-150 ease-in-out;
+        @apply max-w-[192px] rounded-full;
     }
 
     /** Popup **/
