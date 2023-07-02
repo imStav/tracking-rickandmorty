@@ -7,9 +7,9 @@ let github = "https://github.com/imStav";
 <template>
   <header>
     <nav class="nav">
-      <RouterLink to="/" class="identity"
-        >Rick & Morty <br /><span class="text-lg">tracking</span></RouterLink
-      >
+      <RouterLink to="/" class="identity">Tracking <br />
+        <span class="text-2xl">Rick & Morty</span>
+      </RouterLink>
     </nav>
   </header>
 

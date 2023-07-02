@@ -46,15 +46,15 @@
     }
 
     .character-card-alive {
-        @apply bg-emerald-700/30 border border-transparent hover:border-emerald-600 duration-200;
+        @apply bg-emerald-700/30 border border-transparent hover:border-emerald-400 duration-200;
     }
 
     .character-card-dead {
-        @apply bg-red-700/30 border border-transparent hover:border-red-600 duration-200;
+        @apply bg-red-700/30 border border-transparent hover:border-red-400 duration-200;
     }
 
     .character-card-unknown {
-        @apply bg-gray-700/40 border border-transparent hover:border-gray-500 duration-200;
+        @apply bg-gray-700/40 border border-transparent hover:border-gray-400 duration-200;
     }
 
     .character-label {
@@ -71,6 +71,22 @@
 
     .character-img {
         @apply max-w-[192px] rounded-full;
+    }
+
+    .character-status {
+        @apply flex self-start mt-3 text-sm rounded-full px-2;
+    }
+
+    .character-status-alive {
+        @apply bg-green-300 text-green-900;
+    }
+
+    .character-status-dead {
+        @apply bg-red-300 text-red-900;
+    }
+
+    .character-status-unknown {
+        @apply bg-gray-300 text-gray-900;
     }
 
     /** Popup **/
