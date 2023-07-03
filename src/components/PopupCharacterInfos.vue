@@ -64,7 +64,7 @@ function closeInfos() {
       </div>
 
       <div 
-        class="character-status" 
+        class="character-status mb-3" 
         :class="status === 'Alive' 
         ? 'character-status-alive' 
         : status === 'Dead' 
@@ -75,8 +75,9 @@ function closeInfos() {
       </div>
     </div>
 
-    <div class="flex justify-center">
-      <button @click="closeInfos" class="close-infos-btn">Close</button>
+    <div class="flex justify-between">
+      <button @click="closeInfos" class="close-infos-btn modal-btn">Close</button>
+      <button @click="closeInfos" class="more-infos-btn modal-btn">More infos</button>
     </div>
   </dialog>
 </template>

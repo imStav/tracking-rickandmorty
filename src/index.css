@@ -99,8 +99,16 @@
     }
 
     /* Pupup close button */
+    .modal-btn {
+        @apply w-[calc((100%/2)-.5rem)];
+    }
+
     .close-infos-btn {
-        @apply font-black bg-gray-100 text-gray-900 hover:bg-red-500 duration-150 ease-in-out px-5 py-2 rounded-full;
+        @apply font-black bg-gray-100 text-gray-900 hover:bg-red-500 duration-150 ease-in-out px-5 py-1 rounded-full;
+    }
+
+    .more-infos-btn {
+        @apply font-black text-gray-100 border border-gray-100 hover:bg-emerald-500 hover:border-emerald-500 hover:text-emerald-900 duration-150 ease-in-out px-5 py-1 rounded-full;
     }
 
     /** AboutView layout **/
