@@ -37,24 +37,46 @@ function closeInfos() {
 </script>
 
 <template>
-  <dialog class="dialog-ui" :id="id" v-motion-slide-visible-bottom>
-    <div class="flex flex-col items-center font-sans mb-4">
+  <dialog class="dialog-ui" 
+    :class="status === 'Alive' 
+    ? 'backdrop:bg-emerald-700/30' 
+    : status === 'Dead' 
+    ? 'backdrop:bg-red-700/30' 
+    : 'backdrop:bg-gray-700/30'" 
+    :id="id" 
+    v-motion-slide-visible-bottom
+  >
+    <div class="flex flex-col font-sans mb-4">
+      <div class="mb-3">
+        <h2 class="font-bold text-lg">{{ name }}</h2>
+        <p class="font-light">{{ origin }}</p>
+      </div>
+
       <img 
       :src="image" 
-      class="w-36 rounded-full my-4" 
+      class="max-w-36 rounded-2xl" 
       :alt="`picture of ${name}`" 
       />
+      
+      <div class="my-3">
+        <p>Type: {{ species }}</p>
+        <p>Location: {{ location }}</p>
+      </div>
 
-      <h2 class="px-2">{{ name }}</h2>
-
-      <p class="px-2">{{ status }}</p>
-      <p class="hover-details" :title="`Species: ${species}`">{{ species }}</p>
-      <p class="hover-details" :title="`From: ${origin}`">{{ origin }}</p>
-      <p class="hover-details" :title="`Current location: ${location}`">{{ location }}</p>
+      <div 
+        class="character-status" 
+        :class="status === 'Alive' 
+        ? 'character-status-alive' 
+        : status === 'Dead' 
+        ? 'character-status-dead' 
+        : 'character-status-unknown'"
+      >
+        <p class="font-glitch">{{ status }}</p>
+      </div>
     </div>
 
     <div class="flex justify-center">
-      <button @click="closeInfos" class="close-infos-btn">X</button>
+      <button @click="closeInfos" class="close-infos-btn">Close</button>
     </div>
   </dialog>
 </template>
