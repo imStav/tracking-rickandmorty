@@ -91,7 +91,7 @@
 
     /** Popup **/
     .dialog-ui {
-        @apply max-w-[80vw] sm:max-w-[40vw] bg-black text-current backdrop:backdrop-blur-sm border-2 border-gray-700 rounded-3xl;
+        @apply max-w-[80vw] sm:max-w-[33vw] bg-black text-current backdrop:backdrop-blur-sm border-2 border-gray-700 rounded-3xl;
     }
 
     .hover-details {
@@ -100,7 +100,7 @@
 
     /* Pupup close button */
     .modal-btn {
-        @apply w-[calc((100%/2)-.5rem)];
+        @apply sm:w-[calc((100%/2)-.5rem)];
     }
 
     .close-infos-btn {
