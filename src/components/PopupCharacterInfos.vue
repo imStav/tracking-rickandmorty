@@ -76,8 +76,8 @@ function closeInfos() {
     </div>
 
     <div class="flex flex-col sm:flex-row sm:justify-between">
-      <button @click="closeInfos" class="close-infos-btn modal-btn mb-3 sm:mb-0">Close</button>
       <button @click="closeInfos" class="more-infos-btn modal-btn">More infos</button>
+      <button @click="closeInfos" class="close-infos-btn modal-btn mt-3 sm:mt-0">Close</button>
     </div>
   </dialog>
 </template>
