@@ -6,6 +6,7 @@ module.exports = {
       display: ["Creepster", "cursive"],
       sans: ["Montserrat", "sans-serif"],
       glitch: ["Rubik Glitch", "cursive"],
+      mono: ["JetBrains Mono", "monospace"]
     },
     extend: {},
   },

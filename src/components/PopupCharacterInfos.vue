@@ -54,11 +54,11 @@ function closeInfos() {
 
       <img 
       :src="image" 
-      class="max-w-36 rounded-2xl" 
+      class="max-w-36 rounded-t-2xl" 
       :alt="`picture of ${name}`" 
       />
       
-      <div class="my-3">
+      <div class="mb-3 font-light font-mono text-sm bg-gray-700/90 rounded-b-2xl p-3">
         <p>Type: {{ species }}</p>
         <p>Location: {{ location }}</p>
       </div>
