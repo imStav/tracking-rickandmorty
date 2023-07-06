@@ -108,7 +108,7 @@
     }
 
     .more-infos-btn {
-        @apply font-black text-gray-100 border border-gray-100 hover:bg-gray-100 hover:border-current hover:text-emerald-900 duration-150 ease-in-out px-5 py-1 rounded-full;
+        @apply font-black text-gray-100 border border-gray-100 hover:cursor-not-allowed duration-150 ease-in-out px-5 py-1 rounded-full;
     }
 
     /** AboutView layout **/
