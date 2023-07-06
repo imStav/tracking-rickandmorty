@@ -54,17 +54,17 @@ function closeInfos() {
 
       <img 
       :src="image" 
-      class="max-w-36 rounded-2xl" 
+      class="max-w-36 rounded-t-2xl" 
       :alt="`picture of ${name}`" 
       />
       
-      <div class="my-3">
+      <div class="mb-3 font-light font-mono text-sm bg-gray-700/90 rounded-b-2xl p-3">
         <p>Type: {{ species }}</p>
         <p>Location: {{ location }}</p>
       </div>
 
       <div 
-        class="character-status" 
+        class="character-status mb-3" 
         :class="status === 'Alive' 
         ? 'character-status-alive' 
         : status === 'Dead' 
@@ -75,8 +75,9 @@ function closeInfos() {
       </div>
     </div>
 
-    <div class="flex justify-center">
-      <button @click="closeInfos" class="close-infos-btn">Close</button>
+    <div class="flex flex-col sm:flex-row sm:justify-between">
+      <button @click="" class="more-infos-btn modal-btn opacity-30">More infos</button>
+      <button @click="closeInfos" class="close-infos-btn modal-btn mt-3 sm:mt-0">Close</button>
     </div>
   </dialog>
 </template>

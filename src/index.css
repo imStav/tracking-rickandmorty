@@ -91,7 +91,7 @@
 
     /** Popup **/
     .dialog-ui {
-        @apply max-w-[80vw] sm:max-w-[40vw] bg-black text-current backdrop:backdrop-blur-sm border-2 border-gray-700 rounded-3xl;
+        @apply max-w-[80vw] md:max-w-[39vw] lg:max-w-[29vw] bg-black text-current backdrop:backdrop-blur-sm shadow-2xl shadow-black/50 rounded-3xl;
     }
 
     .hover-details {
@@ -99,8 +99,16 @@
     }
 
     /* Pupup close button */
+    .modal-btn {
+        @apply sm:w-[calc((100%/2)-.5rem)];
+    }
+
     .close-infos-btn {
-        @apply font-black bg-gray-100 text-gray-900 hover:bg-red-500 duration-150 ease-in-out px-5 py-2 rounded-full;
+        @apply font-black bg-gray-100 text-gray-900 hover:bg-red-600 hover:text-gray-100 duration-150 ease-in-out px-5 py-1 rounded-full;
+    }
+
+    .more-infos-btn {
+        @apply font-black text-gray-100 border border-gray-100 hover:cursor-not-allowed duration-150 ease-in-out px-5 py-1 rounded-full;
     }
 
     /** AboutView layout **/
