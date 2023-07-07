@@ -91,7 +91,7 @@
 
     /** Popup **/
     .dialog-ui {
-        @apply max-w-[80vw] md:max-w-[39vw] lg:max-w-[29vw] bg-black text-current backdrop:backdrop-blur-sm shadow-2xl shadow-black/50 rounded-3xl;
+        @apply max-w-[80vw] md:max-w-[39vw] lg:max-w-[29vw] xl:max-w-[18vw] bg-black text-current backdrop:backdrop-blur-sm shadow-2xl shadow-black/50 rounded-3xl;
     }
 
     .hover-details {
