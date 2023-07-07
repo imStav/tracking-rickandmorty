@@ -57,14 +57,9 @@ function closeInfos() {
       class="max-w-36 rounded-t-2xl" 
       :alt="`picture of ${name}`" 
       />
-      
-      <div class="mb-3 font-light font-mono text-sm bg-gray-700/90 rounded-b-2xl p-3">
-        <p>Type: {{ species }}</p>
-        <p>Location: {{ location }}</p>
-      </div>
 
       <div 
-        class="character-status mb-3" 
+        class="character-status -mt-7 mb-2 ml-2" 
         :class="status === 'Alive' 
         ? 'character-status-alive' 
         : status === 'Dead' 
@@ -72,6 +67,11 @@ function closeInfos() {
         : 'character-status-unknown'"
       >
         <p class="font-glitch">{{ status }}</p>
+      </div>
+      
+      <div class="mb-3 font-light font-mono text-sm bg-gray-700/90 rounded-b-2xl p-3">
+        <p>Type: {{ species }}</p>
+        <p>Location: {{ location }}</p>
       </div>
     </div>
 
