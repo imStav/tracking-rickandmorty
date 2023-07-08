@@ -17,13 +17,13 @@ let github = "https://github.com/imStav";
 
   <footer>
     <div class="footer-section">    
-      <RouterLink to="/about" class="font-light hover-link border-b border-dotted">
+      <RouterLink to="/about" class="font-light hover-link">
         About
       </RouterLink>
 
       <div>
         Made w/ ❤️ & ☕ by 
-        <a :href="github" class="font-light hover-link border-b border-dotted">
+        <a :href="github" class="font-light hover-link">
          imStav
         </a>
       </div>
