@@ -69,7 +69,7 @@ function closeInfos() {
         <p class="font-glitch">{{ status }}</p>
       </div>
       
-      <div class="mb-3 font-light font-mono text-sm bg-gray-700/90 rounded-b-2xl p-3">
+      <div class="character-details">
         <p>Type: {{ species }}</p>
         <p>Location: {{ location }}</p>
       </div>

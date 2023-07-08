@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+    body {
+        @apply bg-slate-200 text-slate-900 dark:bg-black dark:text-slate-300;
+    }
+
     footer {
         @apply w-full py-4;
     }
@@ -12,11 +16,11 @@
     }
 
     .footer-section a {
-        @apply my-4;
+        @apply my-4 border-b border-dotted border-slate-900 dark:border-slate-300;
     }
 
     .nav {
-        @apply flex fixed top-0 w-full z-10 bg-gradient-to-t from-transparent to-gray-900 backdrop-blur-xl justify-center items-center py-4;
+        @apply flex fixed top-0 w-full z-10 bg-gradient-to-t from-transparent to-gray-400 dark:to-gray-900 backdrop-blur-xl justify-center items-center py-4;
     }
 
     /** HomeView layout **/
@@ -38,7 +42,7 @@
 
     /** Global hover effects for links **/
     .hover-link {
-        @apply hover:text-white duration-150;
+        @apply hover:text-black dark:hover:text-white duration-150;
     }
 
     .character-card {
@@ -89,9 +93,13 @@
         @apply bg-gray-300 text-gray-900;
     }
 
+    .character-details {
+        @apply mb-3 font-light font-mono text-sm text-current bg-gray-400/90 dark:bg-gray-700/90 rounded-b-2xl p-3;
+    }
+
     /** Popup **/
     .dialog-ui {
-        @apply max-w-[80vw] md:max-w-[39vw] lg:max-w-[29vw] xl:max-w-[18vw] bg-black text-current backdrop:backdrop-blur-sm shadow-2xl shadow-black/50 rounded-3xl;
+        @apply max-w-[80vw] md:max-w-[39vw] lg:max-w-[29vw] xl:max-w-[18vw] bg-slate-200 dark:bg-black text-current backdrop:backdrop-blur-sm shadow-2xl shadow-black/50 rounded-3xl;
     }
 
     .hover-details {
@@ -104,11 +112,11 @@
     }
 
     .close-infos-btn {
-        @apply font-black bg-gray-100 text-gray-900 hover:bg-red-600 hover:text-gray-100 duration-150 ease-in-out px-5 py-1 rounded-full;
+        @apply font-black bg-gray-900 text-gray-100 dark:bg-gray-100 dark:text-gray-900 hover:bg-red-600 dark:hover:text-gray-100 duration-150 ease-in-out px-5 py-1 rounded-full;
     }
 
     .more-infos-btn {
-        @apply font-black text-gray-100 border border-gray-100 hover:cursor-not-allowed duration-150 ease-in-out px-5 py-1 rounded-full;
+        @apply font-black text-gray-900 dark:text-gray-100 border border-gray-900 dark:border-gray-100 hover:cursor-not-allowed duration-150 ease-in-out px-5 py-1 rounded-full;
     }
 
     /** AboutView layout **/
